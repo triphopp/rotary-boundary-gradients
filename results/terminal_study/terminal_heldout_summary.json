@@ -1,0 +1,13 @@
+{
+  "cases": 36,
+  "finite": true,
+  "long_base_over_terminal_median": 7.146540935342653,
+  "long_legacy_over_terminal_median": 1.000129394587507,
+  "terminal_worse_than_legacy_20pct": 1,
+  "terminal_worse_than_legacy_any": 17,
+  "max_terminal_angle_error": 0.01742051395823071,
+  "max_baseline_angle_error": 0.1861558948820963,
+  "max_K_variation_rel_l2": 0.0006539638500201922,
+  "boundary_vs_noisy_sum_criterion_pass": true,
+  "direct_terminal_incremental_criterion_pass": false
+}

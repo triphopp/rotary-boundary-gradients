@@ -1,0 +1,92 @@
+[
+  {
+    "chunk": 32,
+    "method": "bf16_sum",
+    "exit_code": 0
+  },
+  {
+    "chunk": 32,
+    "method": "fp32_sum",
+    "exit_code": 0
+  },
+  {
+    "chunk": 64,
+    "method": "bf16_fp32_intermediates",
+    "exit_code": 0
+  },
+  {
+    "chunk": 64,
+    "method": "bf16_sum",
+    "exit_code": 0
+  },
+  {
+    "chunk": 64,
+    "method": "fp32_sum",
+    "exit_code": 0
+  },
+  {
+    "chunk": 32,
+    "method": "bf16_fp32_intermediates",
+    "exit_code": 0
+  },
+  {
+    "chunk": 32,
+    "method": "bf16_boundary_policy",
+    "exit_code": 0
+  },
+  {
+    "chunk": 64,
+    "method": "fp32_storage_tf32_dots",
+    "exit_code": 0
+  },
+  {
+    "chunk": 128,
+    "method": "bf16_boundary_legacy",
+    "exit_code": 0
+  },
+  {
+    "chunk": 128,
+    "method": "fp32_storage_tf32_dots",
+    "exit_code": 0
+  },
+  {
+    "chunk": 64,
+    "method": "bf16_boundary_policy",
+    "exit_code": 0
+  },
+  {
+    "chunk": 128,
+    "method": "bf16_fp32_intermediates",
+    "exit_code": 0
+  },
+  {
+    "chunk": 128,
+    "method": "bf16_sum",
+    "exit_code": 0
+  },
+  {
+    "chunk": 128,
+    "method": "fp32_sum",
+    "exit_code": 0
+  },
+  {
+    "chunk": 32,
+    "method": "bf16_boundary_legacy",
+    "exit_code": 0
+  },
+  {
+    "chunk": 64,
+    "method": "bf16_boundary_legacy",
+    "exit_code": 0
+  },
+  {
+    "chunk": 128,
+    "method": "bf16_boundary_policy",
+    "exit_code": 0
+  },
+  {
+    "chunk": 32,
+    "method": "fp32_storage_tf32_dots",
+    "exit_code": 0
+  }
+]

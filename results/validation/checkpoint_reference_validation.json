@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "cases": 32,
+  "records": [
+    {
+      "T": 1,
+      "initial": false,
+      "checkpoint": 1,
+      "bitwise_equal": true
+    },
+    {
+      "T": 1,
+      "initial": false,
+      "checkpoint": 3,
+      "bitwise_equal": true
+    },
+    {
+      "T": 1,
+      "initial": false,
+      "checkpoint": 64,
+      "bitwise_equal": true
+    },
+    {
+      "T": 1,
+      "initial": false,
+      "checkpoint": 128,
+      "bitwise_equal": true
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "checkpoint": 1,
+      "bitwise_equal": true
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "checkpoint": 3,
+      "bitwise_equal": true
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "checkpoint": 64,
+      "bitwise_equal": true
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "checkpoint": 128,
+      "bitwise_equal": true
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "checkpoint": 1,
+      "bitwise_equal": true
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "checkpoint": 3,
+      "bitwise_equal": true
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "checkpoint": 64,
+      "bitwise_equal": true
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "checkpoint": 128,
+      "bitwise_equal": true
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "checkpoint": 1,
+      "bitwise_equal": true
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "checkpoint": 3,
+      "bitwise_equal": true
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "checkpoint": 64,
+      "bitwise_equal": true
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "checkpoint": 128,
+      "bitwise_equal": true
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "checkpoint": 1,
+      "bitwise_equal": true
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "checkpoint": 3,
+      "bitwise_equal": true
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "checkpoint": 64,
+      "bitwise_equal": true
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "checkpoint": 128,
+      "bitwise_equal": true
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "checkpoint": 1,
+      "bitwise_equal": true
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "checkpoint": 3,
+      "bitwise_equal": true
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "checkpoint": 64,
+      "bitwise_equal": true
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "checkpoint": 128,
+      "bitwise_equal": true
+    },
+    {
+      "T": 257,
+      "initial": false,
+      "checkpoint": 1,
+      "bitwise_equal": true
+    },
+    {
+      "T": 257,
+      "initial": false,
+      "checkpoint": 3,
+      "bitwise_equal": true
+    },
+    {
+      "T": 257,
+      "initial": false,
+      "checkpoint": 64,
+      "bitwise_equal": true
+    },
+    {
+      "T": 257,
+      "initial": false,
+      "checkpoint": 128,
+      "bitwise_equal": true
+    },
+    {
+      "T": 257,
+      "initial": true,
+      "checkpoint": 1,
+      "bitwise_equal": true
+    },
+    {
+      "T": 257,
+      "initial": true,
+      "checkpoint": 3,
+      "bitwise_equal": true
+    },
+    {
+      "T": 257,
+      "initial": true,
+      "checkpoint": 64,
+      "bitwise_equal": true
+    },
+    {
+      "T": 257,
+      "initial": true,
+      "checkpoint": 128,
+      "bitwise_equal": true
+    }
+  ]
+}

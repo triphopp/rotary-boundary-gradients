@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the preprint."
+title: "Boundary Evaluation of Rotary State-Space Gradients in Mixed Precision"
+type: software
+authors:
+  - given-names: Triphop
+    family-names: Mahithitarmmatorn
+repository-code: "https://github.com/triphopp/rotary-boundary-gradients"
+license: Apache-2.0
+date-released: 2026-10-29
+keywords:
+  - state-space models
+  - Mamba-3
+  - mixed precision
+  - rounding error
+  - reverse-mode differentiation
+preferred-citation:
+  type: article
+  title: "Boundary Evaluation of Rotary State-Space Gradients in Mixed Precision"
+  authors:
+    - given-names: Triphop
+      family-names: Mahithitarmmatorn
+  year: 2026
+  notes: "arXiv preprint (identifier to be added)"

@@ -1,0 +1,57 @@
+cases 24 all complete True protocol hash matches True all replay_equal True
+
+==== primary (12 cases)
+method                      medAngle  maxAngle  pass1/2.5/5   medTime
+bf16_sum                     0.09937    0.1718        0/0/0         1
+bf16_fp32_intermediates      0.08235    0.1483        0/0/0     1.172
+bf16_boundary_legacy         0.02437   0.02862       0/7/12     1.035
+bf16_boundary_policy         0.01604   0.01679      0/12/12     1.042
+fp32_storage_tf32_dots      0.008233   0.01376      9/12/12     1.686
+fp32_sum                   8.639e-06  1.25e-05     12/12/12        19
+local_fp32                 2.736e-07 2.763e-07     12/12/12     11.43
+error reduction: median 5.1310, min 3.122, max 9.143, worst regression 0.320; exact 4-cluster bootstrap 3.30-8.68 (16 distinct medians)
+qualified speedup: median 1.6480 (n=12) range 1.265-2.878; fastest qualifying = {'fp32_storage_tf32_dots': 12}; exact bootstrap 1.37-2.04
+policy/BF16 captured overhead: median 1.0423 max 1.3052 min 0.9789
+ordinary (eager, event-timed) backward: TF32 faster than policy in 5/12 cases; policy/BF16 eager range 0.66-1.74
+  scaling bf16_sum                 log-log slope vs T = +0.487
+  scaling bf16_fp32_intermediates  log-log slope vs T = +0.478
+  scaling bf16_boundary_legacy     log-log slope vs T = -0.012
+  scaling bf16_boundary_policy     log-log slope vs T = -0.000
+  scaling fp32_storage_tf32_dots   log-log slope vs T = +0.505
+  shape 0 T=1023 last chunk=63: legacy/policy=1.53, reduction=3.16, reduction/sqrt(T/1023)=3.16, timing max/min over seeds: policy 1.04 TF32 1.54
+  shape 1 T=2048 last chunk=64: legacy/policy=1.55, reduction=4.48, reduction/sqrt(T/1023)=3.17, timing max/min over seeds: policy 1.25 TF32 1.39
+  shape 2 T=4097 last chunk=1: legacy/policy=1.00, reduction=6.34, reduction/sqrt(T/1023)=3.17, timing max/min over seeds: policy 1.45 TF32 1.55
+  shape 3 T=8192 last chunk=64: legacy/policy=1.70, reduction=8.72, reduction/sqrt(T/1023)=3.08, timing max/min over seeds: policy 1.35 TF32 1.27
+  extrapolation: TF32 error reaches policy median at T~11296 and 2.5% at T~27196
+
+==== slow-decay stress (12 cases)
+method                      medAngle  maxAngle  pass1/2.5/5   medTime
+bf16_sum                     0.01489    0.0219        3/6/6         1
+bf16_fp32_intermediates       0.0135    0.0195        3/8/8     1.087
+bf16_boundary_legacy         0.00585  0.006231     12/12/12     1.045
+bf16_boundary_policy        0.005675   0.00601     12/12/12     1.042
+fp32_storage_tf32_dots      0.002156  0.002993     12/12/12     1.753
+fp32_sum                    8.79e-06 8.962e-06     12/12/12     18.34
+local_fp32                 5.802e-06 6.405e-06     12/12/12     10.34
+error reduction: median 2.3618, min 1.417, max 3.395, worst regression 0.705; exact 4-cluster bootstrap 1.59-3.26 (16 distinct medians)
+qualified speedup: median 1.0684 (n=12) range 0.956-1.433; fastest qualifying = {'bf16_sum': 5, 'bf16_fp32_intermediates': 3, 'fp32_storage_tf32_dots': 4}; exact bootstrap 0.96-1.34
+policy/BF16 captured overhead: median 1.0416 max 1.1237 min 0.9256
+ordinary (eager, event-timed) backward: TF32 faster than policy in 2/12 cases; policy/BF16 eager range 0.73-1.73
+  scaling bf16_sum                 log-log slope vs T = +0.395
+  scaling bf16_fp32_intermediates  log-log slope vs T = +0.388
+  scaling bf16_boundary_legacy     log-log slope vs T = +0.013
+  scaling bf16_boundary_policy     log-log slope vs T = +0.019
+  scaling fp32_storage_tf32_dots   log-log slope vs T = +0.241
+  shape 0 T=1023 last chunk=63: legacy/policy=1.05, reduction=1.55, reduction/sqrt(T/1023)=0.00, timing max/min over seeds: policy 1.02 TF32 1.06
+  shape 1 T=2048 last chunk=64: legacy/policy=1.05, reduction=1.92, reduction/sqrt(T/1023)=0.00, timing max/min over seeds: policy 1.11 TF32 1.06
+  shape 2 T=4097 last chunk=1: legacy/policy=1.00, reduction=2.55, reduction/sqrt(T/1023)=0.00, timing max/min over seeds: policy 1.36 TF32 1.31
+  shape 3 T=8192 last chunk=64: legacy/policy=1.04, reduction=3.30, reduction/sqrt(T/1023)=0.00, timing max/min over seeds: policy 1.37 TF32 1.43
+
+==== resource_e2e
+shape 0: policy peak 12.138 MiB, policy/BF16 peak 1.00125, captured TF32/policy 2.141, captured policy/BF16 1.019
+shape 1: policy peak 49.575 MiB, policy/BF16 peak 1.00125, captured TF32/policy 2.026, captured policy/BF16 0.957
+shape 2: policy peak 75.223 MiB, policy/BF16 peak 1.00168, captured TF32/policy 1.657, captured policy/BF16 0.950
+shape 3: policy peak 150.269 MiB, policy/BF16 peak 1.00166, captured TF32/policy 1.367, captured policy/BF16 0.766
+
+==== iteration02 terminal study: 36 cases, terminal worse in 17, >20% worse in 1 (max ratio 1.282), long median legacy/terminal 1.000129, lengths [257, 2049, 8193]
+==== identity validation JSON: {'cases': 256, 'boundary_checks': 4800, 'max_identity_error': 9.851972707825343e-16, 'max_gradient_error': 7.771561172376096e-16, 'max_fd_error': 1.2141725702433702e-09, 'max_error_if_terminal_omitted': 1.6874515888751156}

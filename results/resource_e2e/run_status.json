@@ -1,0 +1,142 @@
+[
+  {
+    "shape": 1,
+    "method": "bf16_sum",
+    "returncode": 0
+  },
+  {
+    "shape": 0,
+    "method": "bf16_fp32_intermediates",
+    "returncode": 0
+  },
+  {
+    "shape": 0,
+    "method": "bf16_boundary_legacy",
+    "returncode": 0
+  },
+  {
+    "shape": 2,
+    "method": "bf16_sum",
+    "returncode": 0
+  },
+  {
+    "shape": 1,
+    "method": "local_fp32",
+    "returncode": 0
+  },
+  {
+    "shape": 1,
+    "method": "fp32_storage_tf32_dots",
+    "returncode": 0
+  },
+  {
+    "shape": 3,
+    "method": "bf16_fp32_intermediates",
+    "returncode": 0
+  },
+  {
+    "shape": 2,
+    "method": "bf16_boundary_legacy",
+    "returncode": 0
+  },
+  {
+    "shape": 3,
+    "method": "fp32_storage_tf32_dots",
+    "returncode": 0
+  },
+  {
+    "shape": 3,
+    "method": "bf16_sum",
+    "returncode": 0
+  },
+  {
+    "shape": 0,
+    "method": "bf16_sum",
+    "returncode": 0
+  },
+  {
+    "shape": 0,
+    "method": "bf16_boundary_policy",
+    "returncode": 0
+  },
+  {
+    "shape": 2,
+    "method": "local_fp32",
+    "returncode": 0
+  },
+  {
+    "shape": 1,
+    "method": "bf16_boundary_policy",
+    "returncode": 0
+  },
+  {
+    "shape": 2,
+    "method": "bf16_fp32_intermediates",
+    "returncode": 0
+  },
+  {
+    "shape": 1,
+    "method": "bf16_boundary_legacy",
+    "returncode": 0
+  },
+  {
+    "shape": 2,
+    "method": "bf16_boundary_policy",
+    "returncode": 0
+  },
+  {
+    "shape": 2,
+    "method": "fp32_storage_tf32_dots",
+    "returncode": 0
+  },
+  {
+    "shape": 1,
+    "method": "bf16_fp32_intermediates",
+    "returncode": 0
+  },
+  {
+    "shape": 3,
+    "method": "bf16_boundary_legacy",
+    "returncode": 0
+  },
+  {
+    "shape": 0,
+    "method": "local_fp32",
+    "returncode": 0
+  },
+  {
+    "shape": 1,
+    "method": "fp32_sum",
+    "returncode": 0
+  },
+  {
+    "shape": 2,
+    "method": "fp32_sum",
+    "returncode": 0
+  },
+  {
+    "shape": 3,
+    "method": "bf16_boundary_policy",
+    "returncode": 0
+  },
+  {
+    "shape": 3,
+    "method": "local_fp32",
+    "returncode": 0
+  },
+  {
+    "shape": 0,
+    "method": "fp32_sum",
+    "returncode": 0
+  },
+  {
+    "shape": 0,
+    "method": "fp32_storage_tf32_dots",
+    "returncode": 0
+  },
+  {
+    "shape": 3,
+    "method": "fp32_sum",
+    "returncode": 0
+  }
+]

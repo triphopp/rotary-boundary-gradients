@@ -1,0 +1,30 @@
+{
+  "complete": true,
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.10.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "capability": "8.6",
+    "torch_cuda": "12.8",
+    "triton": "3.6.0",
+    "numpy": "1.26.4"
+  },
+  "cases": [
+    {
+      "B": 1,
+      "H": 16,
+      "Hq": 1,
+      "N": 64,
+      "P": 64,
+      "T": 2048,
+      "chunk": 64,
+      "methods": {
+        "fp32_storage_tf32_dots": {
+          "error": "Traceback (most recent call last):\n  File \"D:\\Agents\\Claude\\Lag Operator\\submission_track_2026-10-28\\benchmark_isolated_worker_v2.py\", line 38, in <module>\n    gr=torch.autograd.grad(out,args,cot,retain_graph=True,allow_unused=True);lookup={id(a):g for a,g in zip(args,gr)}\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_numerics\\.venv\\Lib\\site-packages\\torch\\autograd\\__init__.py\", line 515, in grad\n    result = _engine_run_backward(\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_numerics\\.venv\\Lib\\site-packages\\torch\\autograd\\graph.py\", line 865, in _engine_run_backward\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_numerics\\.venv\\Lib\\site-packages\\torch\\autograd\\function.py\", line 317, in apply\n    return user_fn(self, *args)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Agents\\Claude\\Lag Operator\\submission_track_2026-10-28\\tf32_baseline\\mamba_ssm\\ops\\triton\\mamba3\\mamba3_siso_combined.py\", line 220, in backward\n    dQ_mid, dK_mid, dV, dADT, dQK_dot, dD, dInput_SSM_State = compute_dqkv(\n                                                              ^^^^^^^^^^^^^\n  File \"D:\\Agents\\Claude\\Lag Operator\\submission_track_2026-10-28\\tf32_baseline\\mamba_ssm\\ops\\triton\\mamba3\\mamba3_siso_bwd.py\", line 764, in compute_dqkv\n    mamba3_siso_bwd_kernel_dqkv[grid](\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_contrib\\_pydeps\\triton\\runtime\\jit.py\", line 370, in <lambda>\n    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_contrib\\_pydeps\\triton\\runtime\\autotuner.py\", line 252, in run\n    ret = self.fn.run(\n          ^^^^^^^^^^^^\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_contrib\\_pydeps\\triton\\runtime\\jit.py\", line 743, in run\n    launch_metadata = kernel.launch_metadata(grid, stream, *bound_args.values())\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_contrib\\_pydeps\\triton\\compiler\\compiler.py\", line 482, in launch_metadata\n    self._init_handles()\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_contrib\\_pydeps\\triton\\compiler\\compiler.py\", line 456, in _init_handles\n    raise_(OutOfResources(self.metadata.shared, max_shared, \"shared memory\"))\n  File \"D:\\Agents\\Claude\\Lag Operator\\ssm_contrib\\_pydeps\\triton\\compiler\\compiler.py\", line 448, in raise_\n    raise err\ntriton.runtime.errors.OutOfResources: out of resource: shared memory, Required: 114688, Hardware limit: 101376. Reducing block sizes or `num_stages` may help.\n"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "file": "burn_info_mamba-3_rotation-as-optimization.md",
+    "sha256": "4f3bb71c187dde10252545dae0821e571741969d0dd2b0498b09b060a57126d7",
+    "revision": "e44d42b7ab12f4b0ea3d0674f5fbb98b75071179",
+    "retrieved": "2026-10-28"
+  },
+  {
+    "file": "burn_src_mamba3_double_ssd_ssd_serial_recalculated_combined_backward.rs",
+    "sha256": "4bfc6caffcb442e729a6afbf9112be5c88f6a0c2126e1e21606bd1ac851e6735",
+    "revision": "e44d42b7ab12f4b0ea3d0674f5fbb98b75071179",
+    "retrieved": "2026-10-28"
+  },
+  {
+    "file": "burn_src_mamba3_quat_scan_backward.rs",
+    "sha256": "dfdc4ed51ec65f99963c2d706c72e024c81410fc0776d9da5b8991fdf1f37a95",
+    "revision": "e44d42b7ab12f4b0ea3d0674f5fbb98b75071179",
+    "retrieved": "2026-10-28"
+  },
+  {
+    "file": "burn_src_mamba3_rotation_mod.rs",
+    "sha256": "c6ef7c051e66db8db8f3aad0c34a4e3c2e8ba9abc7f69672be69d0b07980e0eb",
+    "revision": "e44d42b7ab12f4b0ea3d0674f5fbb98b75071179",
+    "retrieved": "2026-10-28"
+  },
+  {
+    "file": "burn_src_mamba3_rotation_rope.rs",
+    "sha256": "d374cceb0eb5838dd270e48f47b4fa6b5e54adeae26f39f92cb4776e006c7a17",
+    "revision": "e44d42b7ab12f4b0ea3d0674f5fbb98b75071179",
+    "retrieved": "2026-10-28"
+  },
+  {
+    "file": "burn_src_mamba3_single_ssd_mod.rs",
+    "sha256": "72f4deb466e587c6e39b62f38fee5d6b1b2ac433096f84c2642215ddbf83afd5",
+    "revision": "e44d42b7ab12f4b0ea3d0674f5fbb98b75071179",
+    "retrieved": "2026-10-28"
+  },
+  {
+    "file": "burn_src_mamba3_single_ssd_ssd_serial_recalculated_combined_backward.rs",
+    "sha256": "7d396fa495ec35e375e3be8972641548c3e8f67d3a1d8dc1452a3d4da63587a8",
+    "revision": "e44d42b7ab12f4b0ea3d0674f5fbb98b75071179",
+    "retrieved": "2026-10-28"
+  }
+]

@@ -1,0 +1,14 @@
+\newcommand{\ErrorGain}{5.13$\times$}
+\newcommand{\SpeedGain}{1.65$\times$}
+\newcommand{\ErrorCI}{3.30--8.68}
+\newcommand{\SpeedCI}{1.37--2.04}
+\newcommand{\Overhead}{1.042$\times$}
+\newcommand{\WorstOverhead}{1.305$\times$}
+\newcommand{\MainTableRows}{BF16 suffix&0.0994&0&1.00\\
+FP32 intermediates&0.0823&0&1.17\\
+Legacy boundary&0.0244&7&1.03\\
+Boundary policy&0.016&12&1.04\\
+FP32 / TF32&0.00823&12&1.69\\
+FP32 / TF32x3&8.64e-06&12&19.00\\
+Local FP32 adjoint&2.74e-07&12&11.43\\}
+\newcommand{\ResourceParagraph}{A separate warmed, fresh-process check over the four shapes includes forward, all backward work, precision promotion and conversion to caller gradient dtypes. Policy/ordinary extra peak tensor allocation ratios are 1.0012--1.0017, with policy peaks 12.14--150.27 MiB. Complete-primitive captured speedups over TF32 range 1.37--2.14$\times$. These supplementary single-process measurements are not full-model training throughput. The initial cold/autotune peak field is archived but excluded from memory conclusions.}

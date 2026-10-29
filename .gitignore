@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.triton_cache/
+runtime_cache/
+results/resource_reference/
+*.log.tmp
+# LaTeX build products
+paper/*.aux
+paper/*.log
+paper/*.out
+# Lean build products
+verification/lean/.lake/

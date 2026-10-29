@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://huggingface.co/kernels/phanerozoic/mamba3/resolve/595fa7cfc9b040fa3dbc207cae137f5697b47f1d/README.md",
+    "file": "hf_README.md",
+    "sha256": "588da7e91788ecc9659b14569db699684f88e9d4241ee17481911f6c8f584efa"
+  },
+  {
+    "url": "https://huggingface.co/kernels/phanerozoic/mamba3/resolve/595fa7cfc9b040fa3dbc207cae137f5697b47f1d/mamba3_cuda/mamba3_bwd.cu",
+    "file": "hf_mamba3_cuda_mamba3_bwd.cu",
+    "sha256": "1fb462bf17ca612e8f5c05559decca066aff9baed3e47e3fd51fb1d20d02a05b"
+  },
+  {
+    "url": "https://huggingface.co/kernels/phanerozoic/mamba3/resolve/595fa7cfc9b040fa3dbc207cae137f5697b47f1d/torch-ext/mamba3/__init__.py",
+    "file": "hf_torch-ext_mamba3___init__.py",
+    "sha256": "a2b667f45ac383ad8aa9079ee485fc2007e70d015bbaf5f2cf6223b97c5b7141"
+  },
+  {
+    "url": "https://huggingface.co/kernels/phanerozoic/mamba3/resolve/595fa7cfc9b040fa3dbc207cae137f5697b47f1d/tests/test_bwd_bf16.py",
+    "file": "hf_tests_test_bwd_bf16.py",
+    "sha256": "3981a20be2450ab450cf0e817bc32ef146ecae05a9994dccdb683dd6c0471960"
+  },
+  {
+    "url": "https://api.github.com/repos/state-spaces/mamba/issues/1059/comments?per_page=100",
+    "file": "github1059_comments.json",
+    "sha256": "99ee78090894094563a54aecb60acb1d9f73b0993896d7b1137b9dc1ebdc6142"
+  }
+]

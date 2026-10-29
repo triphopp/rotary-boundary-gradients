@@ -1,0 +1,23 @@
+# Authors' CPU quick checks re-run on an independent machine
+# Platform: Linux x86_64 (cloud), Python 3.13.18, torch 2.15.0+cu132, numpy 2.5.3
+# (paper environment: Windows 11, Python 3.11.9, torch 2.10.0+cu128, numpy 1.26.4)
+# Command: python reproduce.py --quick
+RUN check_boundary_identity.py
+{
+  "cases": 256,
+  "boundary_checks": 4800,
+  "max_identity_error": 9.851972707825343e-16,
+  "max_forward_error": 1.6653345369377348e-16,
+  "max_gradient_error": 8.881784197001252e-16,
+  "finite_difference_checks": 24,
+  "max_fd_error": 1.2141725702433702e-09,
+  "max_error_if_terminal_omitted": 1.6874515888751156,
+  "status": "PASS"
+}
+RUN manual_adjoint_reference.py
+PASS 36 1.5543122344752192e-15
+RUN validate_checkpoint_reference.py
+PASS 32 checkpoint comparisons, bitwise identical forward/adjoint.
+RUN local_rotation_adjoint.py
+PASS 32 9.142143488089659e-16
+REPRODUCTION PASS

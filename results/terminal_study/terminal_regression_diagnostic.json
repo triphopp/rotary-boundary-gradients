@@ -1,0 +1,31 @@
+{
+  "case": {
+    "T": 2049,
+    "initial": false,
+    "terminal": true,
+    "seed": 211
+  },
+  "kappa_ref_norm": 15.559116659534208,
+  "kappa_error_legacy": 0.05150654289976706,
+  "kappa_error_terminal": 0.0864277104151189,
+  "kappa_error_from_GPU_states_computed_in_FP64": 0.08642804167803254,
+  "kappa_arithmetic_error_vs_same_GPU_states": 7.892631392288057e-07,
+  "boundary_contraction_error_norm": 0.13224478253947897,
+  "carry": {
+    "legacy": {
+      "error_l2": 0.3188461467819935,
+      "relative_l2": 0.003521687049501494,
+      "mean_signed": 0.0008839527830283653
+    },
+    "terminal": {
+      "error_l2": 0.5032011082008978,
+      "relative_l2": 0.005557905729554139,
+      "mean_signed": -0.00034172034489107024
+    },
+    "oracle_terminal": {
+      "error_l2": 0.13224478253947886,
+      "relative_l2": 0.0014606566293299337,
+      "mean_signed": 0.00010766184761712258
+    }
+  }
+}

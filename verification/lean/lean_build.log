@@ -1,0 +1,10 @@
+# Mathlib v4.35.0 built from source (cache host blocked by proxy); tail of build log
+✔ [2174/2174] Built Mathlib.Analysis.Calculus.Deriv.Mul (13s)
+Build completed successfully (2174 jobs).
+BUILD_EXIT 0
+
+# lake build (BoundaryProof library)
+⚠ [2168/2169] Replayed BoundaryProof
+Build completed successfully (2169 jobs).
+
+# lake env lean BoundaryProof.lean (warnings/errors; empty = clean)

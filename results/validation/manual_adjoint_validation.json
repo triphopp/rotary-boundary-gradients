@@ -1,0 +1,223 @@
+{
+  "cases": 36,
+  "max_error": 1.5543122344752192e-15,
+  "status": "PASS",
+  "records": [
+    {
+      "T": 1,
+      "initial": false,
+      "mask": 0,
+      "max_error": 1.734723475976807e-18
+    },
+    {
+      "T": 1,
+      "initial": false,
+      "mask": 1,
+      "max_error": 1.5878172237704124e-16
+    },
+    {
+      "T": 1,
+      "initial": false,
+      "mask": 2,
+      "max_error": 6.938893903907228e-18
+    },
+    {
+      "T": 1,
+      "initial": false,
+      "mask": 4,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "T": 1,
+      "initial": false,
+      "mask": 8,
+      "max_error": 1.1064155462800547e-18
+    },
+    {
+      "T": 1,
+      "initial": false,
+      "mask": 15,
+      "max_error": 1.9242129332633953e-16
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "mask": 0,
+      "max_error": 1.734723475976807e-18
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "mask": 1,
+      "max_error": 8.619256395771722e-17
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "mask": 2,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "mask": 4,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "mask": 8,
+      "max_error": 8.673617379884035e-19
+    },
+    {
+      "T": 1,
+      "initial": true,
+      "mask": 15,
+      "max_error": 2.52907962076883e-16
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "mask": 0,
+      "max_error": 1.3877787807814457e-17
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "mask": 1,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "mask": 2,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "mask": 4,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "mask": 8,
+      "max_error": 2.7755575615628914e-17
+    },
+    {
+      "T": 7,
+      "initial": false,
+      "mask": 15,
+      "max_error": 1.1382862919885625e-16
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "mask": 0,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "mask": 1,
+      "max_error": 2.116851976309366e-16
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "mask": 2,
+      "max_error": 1.6653345369377348e-16
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "mask": 4,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "mask": 8,
+      "max_error": 4.163336342344337e-17
+    },
+    {
+      "T": 7,
+      "initial": true,
+      "mask": 15,
+      "max_error": 2.68032362878874e-16
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "mask": 0,
+      "max_error": 1.3877787807814457e-16
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "mask": 1,
+      "max_error": 2.50702264875376e-16
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "mask": 2,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "mask": 4,
+      "max_error": 2.805301398268622e-16
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "mask": 8,
+      "max_error": 3.469446951953614e-17
+    },
+    {
+      "T": 65,
+      "initial": false,
+      "mask": 15,
+      "max_error": 2.713731491959841e-16
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "mask": 0,
+      "max_error": 1.3877787807814457e-16
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "mask": 1,
+      "max_error": 1.5790398591211555e-16
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "mask": 2,
+      "max_error": 1.877839504255409e-16
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "mask": 4,
+      "max_error": 1.5543122344752192e-15
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "mask": 8,
+      "max_error": 2.5153490401663703e-17
+    },
+    {
+      "T": 65,
+      "initial": true,
+      "mask": 15,
+      "max_error": 3.609561820079405e-16
+    }
+  ]
+}
